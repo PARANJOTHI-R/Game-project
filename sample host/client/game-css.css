@@ -1,0 +1,219 @@
+
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #heading{
+    margin-top: 40px;
+    margin-left:9em;
+  }
+  #vanta-background {
+    margin:0;
+    position: absolute;
+    top: 118.5px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 118.5px); 
+    z-index: -1; 
+  }
+ body {
+    background-image:url(bird-header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  #heading{
+    color: rgb(0, 0, 0);
+    
+  }
+  header {
+  background-color:rgb(4, 118, 135);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+     background-image:url(bird-header.jpg); 
+     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+  }
+  .title {
+    padding: 20px;
+
+  }
+  
+  .imgs {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    border-top-left-radius: 30%;
+   border-top-right-radius: 30%;
+   border-bottom-left-radius: 30%;
+   border-bottom-right-radius: 30%;
+  }
+  .navcls {
+    
+    margin: 20px;
+    padding: 30px;
+    height: 45px;
+    color: rgb(14, 14, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 20px;
+}
+.divcls {
+    margin: 0;
+    height: 45px;
+    display: flex;
+   color: rgb(14, 14, 45);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    word-spacing: 20px;
+}
+nav a {
+    color: rgb(0, 38, 40);
+    text-decoration: none;
+}
+  li {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 10px;
+  }
+  .sound-button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    background-color: #7800f9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 5px 5px 20px #000000;
+    text-align: center;
+  }
+  .sound-button:hover {
+    background-color: #be3cd8;
+  }
+.Back-button:hover {
+  background-color:rgb(14, 14, 66);
+}
+  /*board*/
+.medium{
+  padding-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px auto;
+  color: black ;
+  position: relative;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.cell:hover {
+  background-color: lightgray;
+}
+.scorecard {
+  position: absolute;
+  right: 30px;
+  top: 200px;
+  background-color: rgba(14, 14, 45, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 150px;
+}
+
+.status {
+  font-size: 24px;
+  margin: 20px;
+  text-align: center;
+  color: black;
+}
+
+.button1 {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn{
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+.button1:hover {
+  background-color: #45a049;
+}
+
+.winning-cell {
+  background-color: #90EE90 !important;
+}
+.scorecard h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.medium{
+  color: rgb(0, 0, 0);
+}
+.btncls{
+  flex-direction: row-reverse;
+  display:flex;
+  margin-left: 1em;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+
+
+  

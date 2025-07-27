@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game-css.css">
+    <link rel="icon" href="icon-img.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">
+      <img class="imgs" src="king png ixon.jpg" alt="King Icon">
+    </h1>
+    <h1 id="heading">Welcome Buddy!</h1>
+    <nav class="navcls">
+      <div class="divcls">
+        <ul>
+          <li><a href="Home-html1.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="vanta-background"></div>
+    <h1 class="medium">Tic-Tac-Toe(Two player)</h1>
+  <div class="status" id="status">Player X's Turn</div>
+  <div class="board" id="board"></div>
+  <div class="scorecard">
+    <h2>Score</h2>
+    <div class="score-item">
+      <span>Player X:</span>
+      <span id="player-x-score">0</span>
+    </div>
+    <div class="score-item">
+      <span>Player O:</span>
+      <span id="player-o-score">0</span>
+    </div>
+    <div class="score-item">
+      <span>Draws:</span>
+      <span id="draw-score">0</span>
+    </div>
+  </div><div class="btncls">
+  <button class="button1"onclick="resetGame()">Restart</button>
+  <button class="btn" onclick="document.location.href='option-page-html.html'">Back</button></div>
+  <script src="Twoplayer-script.js" defer></script>
+  <audio id="winning" src="winning-82808 (2).mp3"></audio>
+</body>
+</html>

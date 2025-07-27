@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="icon" href="icon-img.jpg">
+  <link rel="stylesheet" href="game-css.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="title">
+      <img class="imgs" src="king png ixon.jpg" alt="King Icon">
+    </h1>
+    <h1 id="heading">Welcome Buddy!</h1>
+    <nav class="navcls">
+      
+      <div class="divcls">
+        <ul>
+          <li><a href="Home-html1.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="vanta-background"></div>
+  <h1 class="medium">Cutie(You) vs AI</h1>
+  <div class="status" id="status">Your turn (X)</div>
+  <div class="board" id="board"></div>
+  <div class="scorecard">
+    <h2>Score</h2>
+    <div class="score-item">
+      <span>You :</span>
+      <span id="player-score">0</span>
+    </div>
+    <div class="score-item">
+      <span>AI :</span>
+      <span id="ai-score">0</span>
+    </div>
+    <div class="score-item">
+      <span>Draws:</span>
+      <span id="draw-score">0</span>
+    </div>
+  </div>
+  <div class="btncls">
+  <button class="button1"   onclick="resetGame()">Restart</button>
+  <button class="btn" onclick="document.location.href='option-page-html.html'">Back</button>
+  </div>
+  <script src="Single-player-script.js" defer></script>
+  <audio id="winning-sound" src="winning-82808 (2).mp3"></audio>
+
+</body>
+</html>
